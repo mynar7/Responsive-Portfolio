@@ -269,13 +269,28 @@ footer {
     }
 
     .connectBar li {
-        margin-left: 3%;
+        margin-left: 15%;
     }
 
     .headerContainer ul {
         width: 100%;
     }
+    .headerContainer li {
+        float: left;
+        font-size: 20px;
+        padding-left: 5%;
+        margin-left: 2%;
+        font-weight: bold;
+    }
+    
+    
+    .content {
+        width: 100%;
+    }
+}
 
+@media screen and (max-width: 430px) {
+    
     .headerContainer li {
         float: left;
         font-size: 15px;
@@ -284,8 +299,18 @@ footer {
         font-weight: bold;
     }
 
-    
-    .content {
-        width: 100%;
+    .connectBar li {
+        margin-left: 3%;
     }
+
+    .contactForm {
+        float: left;
+    }
+    .contactForm input {
+        width: 250px;
+    }
+    .contactForm textarea {
+        width: 250px;
+    }
+
 }
