@@ -17,7 +17,7 @@ i {
 }
 
 .wrapper {
-    background-image: url(/assets/images/sayagata-400px.png)
+    background-image: url(../images/sayagata-400px.png)
 }
 
 /*remove underline from links, make them display applied fonts*/
