@@ -166,6 +166,7 @@ header {
 }
 .connectBar li {
      float: left;
+     position: relative;
      width: 55;
      height: 55;
      border-radius: 10px;
