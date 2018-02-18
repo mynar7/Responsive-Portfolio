@@ -1,0 +1,286 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 22px;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+/*indent about me*/
+p ~ p {
+    text-indent: 50px;
+}
+
+/* fix italics, thanks meyer*/
+i {
+    font-style: italic;
+}
+
+.wrapper {
+    background-image: url(/assets/images/sayagata-400px.png)
+}
+
+/*remove underline from links, make them display applied fonts*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*my header style*/
+header {
+    background-color: white;
+    border-bottom: 2px grey solid;
+    margin-bottom: 40px;
+    height: 73px;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.nameLogo {
+    font-family: 'Rock Salt', cursive;
+    background-color:rgb(45,95,115);
+    float: left;
+    color: White;
+    padding: 22px;
+    font-size: 30px;
+}
+
+/* Code for my link/nav bar */
+.headerContainer ul {
+    float: right;
+}
+
+.headerContainer li {
+    font-family: 'Rock Salt', cursive;
+    color: rgb(45,95,115);
+    float: left;
+    margin: 25px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: gray 2px solid;
+
+}
+
+/* removes line to left of "about" */
+.headerContainer li:first-of-type{
+    border-left: 0;
+}
+
+/*wraps the page content except footer and header*/
+.pageBody {
+    clear: both;
+    max-width: 960px;
+    margin: auto;
+    height: 81%;
+}
+
+.content {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 650px;
+    background-color:white;
+    line-height: 40px;
+    float: left;
+    color: gray;
+    padding: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(45,95,115);
+    font-weight: bold;
+    padding: 15px 0;
+    font-size: 40px;
+    border-bottom: gray 2px solid;
+    margin-bottom: 10px;
+}
+
+.profilePic {
+    float: left;
+    margin-right: 20px;
+    box-shadow: 7px 7px 10px rgba(11, 23, 29, 0.644);
+}
+
+/*style for portfolio picture links*/
+.content li {
+    position: relative;
+    float: left;
+    margin: 10px 10px 10px 30px;
+}
+
+/* style for portfolio picture tags*/
+.content li h2 {
+    font-family: 'Rock Salt', cursive;
+    position: absolute;
+    Color: white;
+    bottom: 30px;
+    width: 250px;
+    text-align: center;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(45,95,115); 
+    transition: opacity 2s, bottom 2s;
+    opacity: 0.8;
+}
+
+/* style only portfolio images */
+.content li img {
+    box-shadow: 7px 7px 10px rgba(11, 23, 29, 0.644);
+    transition: opacity 2s;
+}
+
+.content li:hover img {
+    opacity: 0.4;
+}
+
+.content li:hover h2 {
+    opacity: 1;
+    bottom: 60px;
+}
+
+/* style for my social media link bar on right of page*/
+.connectBar {
+    box-sizing: border-box;
+    width: 270px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(45,95,115);
+    background-color: white;
+    float: right;
+    margin-left: 10px;
+    padding: 20px;
+    
+}
+.connectBar h2 {
+    font-size: 26px;
+    text-align: center;
+    color: rgb(45,95,115);
+    border-bottom: gray 2px solid;
+    padding: 15px 0;
+}
+.connectBar li {
+     float: left;
+     width: 55;
+     height: 55;
+     border-radius: 10px;
+     margin: 10 10 0 10;
+     box-shadow: 7px 7px 10px rgba(11, 23, 29, 0.644);
+ } 
+
+ .connectBar li:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 20ms;
+ }
+
+ @keyframes bounce {
+     0% {bottom: 0;}
+     20% {bottom: 3px;}
+     100% {bottom: 0;}
+     
+ }
+
+/*style for the contact form*/
+.contactForm input {
+    width: 560px;
+    padding: 10px;
+    font: inherit;
+    color: inherit;
+    font-size: 20px;
+}
+
+.contactForm textarea {
+    width: 560px;
+    resize: none;
+    height: 200px;
+    padding: 10px;
+    font: inherit;
+    color: inherit;
+    font-size: 20px;
+}
+
+.contactForm input[type=button], [type=submit] {
+    background-color: rgb(45,95,115);
+    font-family: 'Rock Salt', cursive;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+/* Style for the footer*/
+footer {
+    padding: 22px 0;
+    font-size: 18px;
+    color: white;
+    clear: both;
+    text-align: center;
+    overflow: hidden;
+    background-color: gray;
+    width: 100%;
+    border-top: rgb(45,95,115) 8px solid;
+}
+
+@-ms-viewport {
+    width: device-width;
+  }
+
+@media screen and (max-width: 980px) {
+    .connectBar {
+        float: left;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .headerContainer ul {
+        float: left;
+    }
+    .headerContainer li {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+    .connectBar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .connectBar li {
+        margin-left: 15%;
+    }
+
+    .headerContainer ul {
+        width: 100%;
+    }
+
+    .headerContainer li {
+        float: left;
+        font-size: 15px;
+        margin-left: 7%;
+        padding-left: 8%;
+        font-weight: bold;
+    }
+
+    .nameLogo {
+        width: 100%;
+        text-align: center;
+    }
+    .content {
+        width: 100%;
+    }
+}
