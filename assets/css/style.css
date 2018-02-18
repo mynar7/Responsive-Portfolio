@@ -243,13 +243,20 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .nameLogo {
+        width: 100%;
+        text-align: center;
+    }
 
     .headerContainer ul {
         float: left;
+        width: 100%;
     }
     .headerContainer li {
         font-size: 17px;
         font-weight: bold;
+        margin-left: 5%;
+        padding-left: 10%;
     }
     
 }
@@ -262,7 +269,7 @@ footer {
     }
 
     .connectBar li {
-        margin-left: 15%;
+        margin-left: 3%;
     }
 
     .headerContainer ul {
@@ -272,15 +279,12 @@ footer {
     .headerContainer li {
         float: left;
         font-size: 15px;
-        margin-left: 7%;
-        padding-left: 8%;
+        padding: 8px;
+        margin-left: 10px;
         font-weight: bold;
     }
 
-    .nameLogo {
-        width: 100%;
-        text-align: center;
-    }
+    
     .content {
         width: 100%;
     }
