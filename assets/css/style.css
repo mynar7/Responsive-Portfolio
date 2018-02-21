@@ -284,7 +284,18 @@ footer {
         margin-left: 2%;
         font-weight: bold;
     }
-    
+    .contactForm li {
+        width: 90%
+    }
+    .contactForm input[type=button], [type=submit] {
+        width: 100%;
+    }
+    .contactForm input {
+        width: 100%;
+    }
+    .contactForm textarea {
+        width: 100%;
+    }
     
 }
 
@@ -305,11 +316,15 @@ footer {
     .contactForm {
         float: left;
     }
+
+    .contactForm input[type=button], [type=submit] {
+        width: 90%;
+    }
     .contactForm input {
-        width: 250px;
+        width: 90%;
     }
     .contactForm textarea {
-        width: 250px;
+        width: 90%;
     }
 
 }
