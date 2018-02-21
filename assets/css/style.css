@@ -243,8 +243,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+   
     .nameLogo {
         width: 100%;
+        padding: 22px 0;
         text-align: center;
     }
 
@@ -284,12 +286,9 @@ footer {
     }
     
     
-    .content {
-        width: 100%;
-    }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
     
     .headerContainer li {
         float: left;
@@ -300,7 +299,7 @@ footer {
     }
 
     .connectBar li {
-        margin-left: 3%;
+        margin-left: 6%;
     }
 
     .contactForm {
